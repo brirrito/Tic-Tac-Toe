@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff) fixed;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+}
