@@ -1,13 +1,60 @@
 body {
   background: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff) fixed;
   font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1 {
   color: black;
   font-size: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+#container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#gamesheet {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+}
+
+#restartButton {
+  margin-top: 40px;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px, 0px;
+  border-radius: 25px;
+  width: 105px;
+  height: 35px;
   font-family: 'Playfair Display', serif;
+  font-size: 25px;
+}
+
+#restartButton:hover {
+  border-color: white;
 }
