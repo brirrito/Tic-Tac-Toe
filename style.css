@@ -1,9 +1,8 @@
 body {
-  background: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff) fixed;
-  font-family: 'Playfair Display', serif;
+  background: #A2D2FF;
+  font-family: 'Pacifico', cursive;
   margin: 0;
   padding: 0;
-  overflow-y: scroll;
 }
 
 * {
@@ -11,13 +10,21 @@ body {
 }
 
 h1 {
-  color: black;
+  color: #ff865e;
   font-size: 40px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Pacifico', cursive;
+}
+
+.subtext {
+  font-size: 20px;
+}
+
+.player-name {
+  font-weight: bold;
 }
 
 .container {
-  padding: 40px;
+  padding: 30px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,6 +37,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
+  border-radius: 5px;
 }
 
 .box {
@@ -38,29 +46,31 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: 7px black solid;
+  background-color: #fef9ef;
+  border: 7px #fee440 solid;
+  border-radius: 5px;
 }
 
 .box:hover {
-  background-color: rgb(232, 232, 232);
+  background-color: #faefd7;
 }
 
 #restartButton {
   margin: 40px 40px;
-  background-color: white;
-  border: 2px solid black;
+  background-color: #fef9ef;
+  border: 2px solid #ff865e;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px, 0px;
   border-radius: 25px;
-  width: 105px;
-  height: 35px;
-  font-family: 'Playfair Display', serif;
+  width: 150px;
+  height: 90px;
+  font-family: 'Pacifico', cursive;
   font-size: 25px;
+  color: #ff865e;
 }
 
 #restartButton:hover {
-  border-color: white;
+  border-color: #fef9ef;
 }
