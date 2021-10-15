@@ -6,6 +6,7 @@ const spaces = [null, null, null, null, null, null, null, null, null];
 const O_TEXT='0';
 const X_TEXT='X';
 let currentPlayer = X_TEXT;
+let winnerDeclared = false;
 
 // selectors
 let subtext = document.querySelector('.subtext'); 
@@ -91,6 +92,13 @@ const hasPlayerWon = (player) => {
     if (spaces[1] === player && spaces[7] === player) {
       console.log(`${player} wins on the middle vertical`);
       subtext.innerHTML = `<b>${player} wins on the middle vertical!</b>`;
+      return true;
+    }
+  }
+  if (spaces[2] === player) {
+    if (spaces[4] === player && spaces[6] === player) {
+      console.log(`${player} wins on the diagonal`);
+      subtext.innerHTML = `<b>${player} wins on the diagonal!</b>`;
       return true;
     }
   }

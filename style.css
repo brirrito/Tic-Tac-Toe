@@ -59,7 +59,7 @@ h1 {
 #restartButton {
   margin: 40px 40px;
   background-color: #fef9ef;
-  border: 2px solid #ff865e;
+  border: 10px solid #ff865e;
   display: flex;
   justify-content: center;
   align-items: center;
