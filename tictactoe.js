@@ -12,6 +12,7 @@ let subtext = document.querySelector('.subtext');
 // display winner/tie
 let playerName = document.querySelector('.player-name'); // purpose: alert player turn
 
+//create gameboard
 const drawBoard = () => {
   boxes.forEach((box, index) => {
     let styleString = '';
@@ -32,6 +33,7 @@ const drawBoard = () => {
   })
 }
 
+//update player direction
 function alertNextPlayer() {
   currentPlayer === O_TEXT ? playerName.textContent = 'Player 2' : playerName.textContent = 'Player 1';
 }
@@ -49,6 +51,7 @@ function boxClicked(e) {
   }
 }
 
+//checks if a player has won & notifies
 const hasPlayerWon = (player) => {
   if (spaces[0] === player) {
     if (spaces[1] === player && spaces[2] === player) {
@@ -93,6 +96,7 @@ const hasPlayerWon = (player) => {
   }
 };
 
+//restart button
 restartButton.addEventListener("click", () => {
   spaces.forEach((space, index) => {
     spaces[index] = null;
