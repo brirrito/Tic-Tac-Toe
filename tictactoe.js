@@ -109,6 +109,5 @@ restartButton.addEventListener("click", () => {
   currentPlayer = X_TEXT;
 });
 
-alertNextPlayer();
 drawBoard();
 
