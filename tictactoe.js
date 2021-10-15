@@ -5,7 +5,7 @@ const playText = document.getElementById("playText");
 const spaces = [null, null, null, null, null, null, null, null, null];
 const O_TEXT='0';
 const X_TEXT='X';
-let currentPlayer = O_TEXT;
+let currentPlayer = X_TEXT;
 
 // selectors
 let subtext = document.querySelector('.subtext'); 
@@ -35,7 +35,7 @@ const drawBoard = () => {
 
 //update player direction
 function alertNextPlayer() {
-  currentPlayer === O_TEXT ? playerName.textContent = 'Player 2' : playerName.textContent = 'Player 1';
+  currentPlayer === X_TEXT ? playerName.textContent = 'Player 1' : playerName.textContent = 'Player 2';
 }
 
 function boxClicked(e) {
@@ -47,7 +47,7 @@ function boxClicked(e) {
       playText.innerHTML = `${currentPlayer} wins!!`;
       return;
     }
-    currentPlayer = currentPlayer === O_TEXT ? X_TEXT : O_TEXT;
+    currentPlayer = currentPlayer === X_TEXT ? O_TEXT : X_TEXT;
   }
 }
 
@@ -106,7 +106,7 @@ restartButton.addEventListener("click", () => {
   });
   playText.innerHTML = `Let's Play!!`;
 
-  currentPlayer = O_TEXT;
+  currentPlayer = X_TEXT;
 });
 
 alertNextPlayer();
